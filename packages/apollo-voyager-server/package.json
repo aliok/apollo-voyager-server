@@ -20,7 +20,9 @@
     "compile": "tsc --build tsconfig.json",
     "watch": "tsc --build tsconfig.json --watch",
     "compile:clean": "tsc --build tsconfig.json --clean",
-    "test": "ava '*.test.ts' '**/*.test.ts'"
+    "test": "ava 'src/*.test.ts' 'src/**/*.test.ts'",
+    "integration_test": "ava --concurrency=1 'integration_test/*.test.ts' 'integration_test/**/*.test.ts'",
+    "keycloak": "docker-compose -f keycloak/docker-compose.yml -p sync up"
   },
   "dependencies": {
     "@aerogear/apollo-voyager-audit": "^1.0.0",

@@ -9,3 +9,6 @@ const apolloVoyagerServer = require('@aerogear/apollo-voyager-server');
 
 // TODO: DEMONSTRATE API
 ```
+
+Run integration tests
+TODO

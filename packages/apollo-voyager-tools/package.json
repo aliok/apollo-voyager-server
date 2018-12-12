@@ -7,7 +7,8 @@
     "compile": "tsc --build tsconfig.json",
     "watch": "tsc --build tsconfig.json --watch",
     "test": "ava '*.test.ts' '**/*.test.ts'",
-    "compile:clean": "tsc --build tsconfig.json --clean"
+    "compile:clean": "tsc --build tsconfig.json --clean",
+    "integration_test": "echo no integration tests"
   },
   "dependencies": {
     "graphql-tools": "^4.0.3"
